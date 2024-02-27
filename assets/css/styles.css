@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+/*CSS in Header Navbar*/
+nav {
+  cursor: pointer;
+}
+.container-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding-inline: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.container-header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+}
+.container-header a {
+  text-decoration: none;
+  color: rgb(220, 20, 20);
+  font-size: 20px;
+}
+.container-header ul li a:link {
+  color: red;
+}
+.container-header ul li a:hover {
+  color: white;
+  background-color: rgb(220, 20, 20);
+  transition: all ease-in-out 0.25s;
+}
+
+/*CSS in Main*/
+.container-main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Css in Main about*/
+.container-about {
+  background-color: rgb(220, 20, 20);
+  display: flex;
+  height: 100vh;
+}
+.container-about figure {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  color: white;
+  text-align: justify;
+}
+.container-about figure img {
+  border-radius: 100%;
+  height: 300px;
+  border-style: solid;
+  border-color: white;
+}
+
+/*Css in main studied*/
+.container-studied {
+  background-color: #f5f5f5;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding-inline: 5rem;
+  color: rgb(220, 20, 20);
+  justify-content: center;
+  height: 100vh;
+}
+
+.container-studied h1 {
+  text-align: center;
+}
+
+.container-studied .card-studied h3 {
+  padding-left: 15px;
+  text-align: center;
+}
+.container-studied .card-studied {
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+.tiga {
+  background-color: rgb(220, 20, 20);
+  color: white;
+}
+
+/*CSS in main sertifikat */
+.container-sertifikat {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  height: auto;
+}
+.container-sertifikat h1 {
+  display: flex;
+  justify-content: center;
+}
+.container-sertifikat .card-sertifikat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.container-sertifikat section {
+  width: 400px;
+  height: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: solid black;
+}
+.container-sertifikat section img {
+  width: 400px;
+  height: 280px;
+}
+
+/*Css Aside*/
+aside {
+  position: fixed;
+  margin-top: 2rem;
+}
+aside .contact img {
+  height: 30px;
+}
+aside .contact figurecaption {
+  font-size: 3px;
+}
+aside .contact ul {
+  padding: 2rem 1rem;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 50%;
+}
+
+aside .contact li {
+  list-style-type: none;
+}
+
+aside .contact li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(220, 20, 20);
+}
+footer {
+  display: flex;
+  background-color: rgb(220, 20, 20);
+  color: #fff;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+}
+/* Fitur Java Script GoToTop */
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 2em;
+}
+/*Responsive*/
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  .container-studied {
+    height: 100vh;
+  }
+  .container-about {
+    height: 100vh;
+  }
+}
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  .container-about figure {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-about {
+    height: auto;
+  }
+  .container-studied {
+    height: auto;
+  }
+}

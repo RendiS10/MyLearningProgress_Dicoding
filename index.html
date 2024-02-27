@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Font Awesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/profile.jpg"
+      type="image/x-icon"
+    />
+    <title>My Learning Progress</title>
+  </head>
+  <body>
+    <!-- Header Content -->
+    <header class="container-header">
+      <nav>
+        <ul>
+          <li>
+            <a href="#" id="home">Rendi Sutendi</a>
+          </li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#studied">Studied</a></li>
+          <li><a href="#sertifikat">Sertifikat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Content Header -->
+    <!-- Main Content -->
+    <main>
+      <!-- Main Aside Content -->
+      <aside>
+        <div class="contact">
+          <ul>
+            <li>
+              <a href="#about"><img src="assets/img/profile.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://github.com/RendiS10"
+                ><i class="fab fa-github" style="color: #dc1414"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="mailto:rendisutendi10@gmail.com"
+                class="m-3 text-danger me-5"
+                ><i class="fas fa-envelope-open" style="color: #dc1414"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://wa.me/6285721451615" class="m-3 text-danger"
+                ><i class="fab fa-whatsapp" style="color: #dc1414"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- End Main Aside -->
+      <article id="content" class="container-main">
+        <!-- Main Content About -->
+        <article id="about" class="container-about">
+          <figure>
+            <img src="assets/img/profile.jpg" alt="Foto Rendi Sutendi" />
+            <figcaption>
+              <h1>Hai, Nice To meet you !</h1>
+              <p>
+                Perkenalkan nama saya RENDI SUTENDI, biasa dipanggil dengan
+                Rendi atau ReS. Saya adalah mahasiswa semester 6 di STMIK
+                Mardira Indonesia Jurusan Teknik Informatika Sistem Informasi.
+              </p>
+              <p>
+                Saya sangat tertarik pada Pemrograman khususnya di bagian Front
+                end. Maka dari itu di semester 6 ini saya mengikuti Program MSIB
+                Batch 6 dan daftar di Mitra PT Presentologics untuk mempelajari
+                pengembangan Front End dan Back end WEB Developer
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+        <!-- End Main Content About -->
+        <!-- Main Content Studied -->
+        <article id="studied" class="container-studied">
+          <h1>Kelas Yang Sudah Dipelajari</h1>
+          <section class="card-studied">
+            <h3>Belajar dasar Git dengan Github</h3>
+          </section>
+          <section class="card-studied">
+            <h3>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+          </section>
+          <section class="card-studied">
+            <h3>Pengenalan ke Logika Pemrograman (Programming Logic 101)</h3>
+          </section>
+          <section class="card-studied tiga">
+            <h3>Belajar Dasar Pemrograman Web</h3>
+          </section>
+        </article>
+        <!-- End Main Content Studied -->
+        <!-- Main Content Sertifikat -->
+        <article id="sertifikat" class="container-sertifikat">
+          <h1>Bukti Penyelesaian Kelas</h1>
+          <div class="card-sertifikat">
+            <section>
+              <img
+                src="assets/img/sertifikat_belajardasardengangithub.jpg"
+                alt=""
+              />
+            </section>
+            <section>
+              <img
+                src="assets/img/sertifikat_memulaidasarpemrograman.jpg"
+                alt=""
+              />
+            </section>
+            <section>
+              <img src="assets/img/sertifikat_pengenakankeLogika.jpg" alt="" />
+            </section>
+          </div>
+          <br />
+        </article>
+        <!-- End Main Content Sertificact -->
+
+        <!-- Fitur goTotop Js -->
+        <div class="top" onclick="goToTop()">
+          <i class="far fa-hand-pointer" style="color: #dc1414"></i>
+        </div>
+        <script>
+          const goToTop = () => {
+            return (location.href = "#home");
+          };
+        </script>
+      </article>
+      <!-- End Fitur goTotop Js -->
+    </main>
+    <!-- End Main Content -->
+    <!-- Footer Content -->
+    <footer>
+      <p>Copyright © 2024. Designed &amp; Developed by rendi</p>
+    </footer>
+    <!-- End Footer Content -->
+  </body>
+</html>
